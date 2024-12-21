@@ -3,4 +3,4 @@ sudo dnf update -y
 sudo dnf install -y curl git unzip
 
 # Run terminal installers
-for installer in ~/.local/share/omakub/install/terminal/*.sh; do source $installer; done
+for installer in ~/.local/share/omakubora/install/terminal/*.sh; do source $installer; done
