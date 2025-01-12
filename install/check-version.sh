@@ -9,7 +9,7 @@ fi
 . /etc/os-release
 
 # Check if running on Fedora 41
-if [ "$ID" != "fedora" ] || [ $(echo "$VERSION_ID != 41" | bc) != 1 ]; then
+if [ "$ID" != "fedora" ] || [ $(echo "$VERSION_ID != "41 (Workstation Edition)" | bc) != 1 ]; then
     echo "$(tput setaf 1)Error: OS requirement not met"
     echo "You are currently running: $ID $VERSION_ID"
     echo "OS required: Fedora 41"
